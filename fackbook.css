@@ -1,0 +1,65 @@
+.fs-0{
+    font-size: 4rem;
+}
+.fs-7{
+    font-size: 8.8rem;
+}
+.bg-gray{
+    background-color: #f0f2f5;
+}
+/* Nav button */
+.nav-item a:hover{
+    background: #f0f2f5 !important;
+    
+}
+.nav-item a:hover i{
+    color:blue !important;
+    
+}
+.nav-item-activee i{
+
+    color: blue;
+
+}
+.nav-item-activee{
+    position: relative;
+}
+.nav-item-activee:before{
+  content: "";
+  position: absolute;
+  background: white !important;
+  border-bottom:3px solid blue;
+
+}
+
+/* chat box/ */
+.modal-content:hover .fa-phone-alt{
+    color: blue !important;
+}
+.modal-content:hover .fa-video{
+    color: blue !important;
+}
+.modal-content:hover .fa-file-image{
+    color: blue !important;
+}
+.modal-content:hover .fa-plus-circle{
+    color: blue !important;
+}
+.modal-content:hover .fa-portrait{
+    color: blue !important;
+}
+.modal-content:hover .fa-adjust{
+    color: blue !important;
+}
+.modal-content:hover .fa-thumbs-ups{
+    color: blue !important;
+}
+
+@media(min-width:62em)
+{
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
