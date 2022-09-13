@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fackbook main</title>
+
+    <link rel="stylesheet" href="fackbook.css" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray" >
+    <!-- login -->
+    <div
+      class="container d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-5"
+    >
+      <!-- heading -->
+      <div class="text-center text-lg-start mt-lg-5 pt-lg-5">
+        <h1 class="text-primary fw-bild fs-0">fackbook</h1>
+        <p class="w-75 mx-auto mx-lg-0 fs-4">
+          Fackbook helps you to connect and share with the people in your life
+        </p>
+      </div>
+      <!-- form -->
+      <div style="max-width: 28rem; width: 100%">
+        <div class="bg-white shadow round p-3 input-group-lg">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email address or phone number"
+          />
+          <input type="password" class="form-control" placeholder="password" />
+          <a href="./feed.html"><div class="btn btn-primary w-100 my-3">log in</div></a>
+          <a href="#" class="text-decoration-none text-center"
+            >Forgotten password?</a
+          >
+          <br />
+          <div class="text-center my-4">
+            <div
+              class="btn btn-success btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Create an account
+            </div>
+          </div>
+          <!-- creating modal -->
+
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="creatModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- head -->
+                <div class="modal-header">
+                  <div>
+                    <h2 class="modal-title" id="creatModalLabel">Sing Up</h2>
+                    <p class="text-muted">It is quick and easy</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                  <form action="">
+                    <!-- name -->
+                    <div class="row">
+                      <div class="col">
+                        <input
+                          type=" text  "
+                          class="fom-control"
+                          placeholder="First Name"
+                        />
+                      </div>
+                      <div class="col">
+                        <input
+                          type=" text  "
+                          class="fom-control"
+                          placeholder="Surname"
+                        />
+                      </div>
+                    </div>
+                    <!-- email and pass -->
+
+                    <input
+                      type=" email "
+                      class="d-block my-3"
+                      class="fom-control"
+                      placeholder="Mobile number or email address"
+                    />
+
+                    <input
+                      class="d-block my-3"
+                      type=" password "
+                      class="fom-control"
+                      placeholder="new password"
+                    />
+
+                    <!-- DOB -->
+                    <div class="row my-3">
+                      <span class="text-muted">
+                        Date of Birth
+                        <i
+                          type="button"
+                          class="fa-solid fa-circle-question"
+                          data-bs-container="body"
+                          data-bs-toggle="popover"
+                          data-bs-placement="right"
+                          data-bs-content="lorem ekroisdjckmv skdmnfjisn sdkjfjsf kjsifjvm  kjsjodjm "
+                        >
+                        </i>
+                      </span>
+                      <div class="col">
+                        <select name="" id="" class="form-select">
+                          <option value="1">one</option>
+                          <option value="2">two</option>
+                          <option value="3">three</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <select name="" id="" class="form-select">
+                          <option value="1">one</option>
+                          <option value="2">two</option>
+                          <option value="3">three</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <select name="" id="" class="form-select">
+                          <option value="1">one</option>
+                          <option value="2">two</option>
+                          <option value="3">three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- gender selection -->
+                    <div class="row ">
+                      <span class="text-muted">Gender <i type="button" class="fa-solid fa-circle-question"
+                          data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                          data-bs-content="lorem ekroisdjckmv skdmnfjisn sdkjfjsf kjsifjvm  kjsjodjm ">
+                        </i>
+                      </span>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Female
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Other
+                          </label>
+                        </div>
+                      </div>
+                  </div>
+                    <!-- gener selct?? -->
+                    <div class="d-none" id="Gender_Select">
+                      <select class="form-select">
+                        <option value="1">one</option>
+                        <option value="1">one</option>
+                        <option value="1">one</option>
+                      </select>
+                      <div class="my-3">
+                        <span> Your pronoum is vaisible to every one </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Gender[option]"
+                        />
+                      </div>
+                    </div>
+                    <!-- deccramor -->
+                      <div class="text-center">
+                        <span class="text-muted ">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, natus?
+
+                        </span>
+                      </div>
+                    <!-- btn -->
+                    <div class="text-center mt-3">
+                  <button type="button" class="btn btn-success btn-lg" data-bs-dismiss="modal">
+                    Sign Up
+
+                  </button>
+                    </div>
+                  </form>
+                </div>
+               </div>
+            </div>
+          </div>
+                  <!-- end -->
+        </div>
+                  <!-- tag  -->
+                  <div class="my-5 pb-5 text-center">
+                    <p class="fw-bold">
+                      <a href="#" class="text-decoration-none tetx-dark">Create a page </a><span class="fw-normal"> for a celebreity,bussiness</span>
+                    </p>
+                  </div> 
+      </div>
+    </div>
+            <!-- Footer -->
+            <footer class="bg-white p-4 text-muted">
+              <div class="container">
+               <!-- language -->
+               <div class="d-flex flex-wrap">
+                <p class="mx-2  mb-0">English (US)</p>
+                <p class="mx-2  mb-0">titeng</p>
+                <p class="mx-2  mb-0">Dfkfmom</p>
+                <p class="mx-2 mb-0">Hindi</p>
+               </div>
+               <hr/>
+                <!-- action -->
+                <div class="d-flex flex-wrap">
+                  <p class="mx-2  mb-0">Sign Up</p>
+                  <p class="mx-2  mb-0">Login</p>
+                  <p class="mx-2  mb-0">Messenger</p>
+                  <p class="mx-2 mb-0">Fackbook lite</p>
+                 </div>
+                 <!-- copy -->
+                 <div class="mt-4 mx-2">
+                  <p class="">
+                    fackbook &copy:2022
+                  </p>
+                 </div>
+              </div>
+            </footer>
+    <script src="fackbook.js"></script>
+    <!-- java-sc -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
